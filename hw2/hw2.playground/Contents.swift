@@ -11,13 +11,13 @@ func fibonacci(number i: Int) -> Int {
 
 fibonacci(number: 6)
 
-//2. Compute n! (factorial) for integer n ≥ 0
+// 2. Compute n! (factorial) for integer n ≥ 0
 func factorial(number n: Int) -> Int {
     return n <= 1 ? 1 : n * factorial(number: n - 1)
 }
 
 factorial(number: 5)
-//3. Compute the sum of all integers between two given integers (inclusive)
+// 3. Compute the sum of all integers between two given integers (inclusive)
 func twoSum(first x: Int, second y: Int) -> Int {
     var answer: Int = 0
     for a in x ... y {
