@@ -55,7 +55,7 @@ class ScriptureViewController : UIViewController, WKNavigationDelegate {
         if segue.identifier == Storyboard.ShowMap {
             let navVC = segue.destination as? UINavigationController
             if let mapVC = navVC?.topViewController as? MapViewController {
-                //needswork: configure the map view controller appropiately
+                // NEEDSWORK: configure the map view controller appropiately
             }
         }
     }
@@ -74,10 +74,12 @@ class ScriptureViewController : UIViewController, WKNavigationDelegate {
                     performSegue(withIdentifier: Storyboard.ShowMap, sender: self)
                 }
                 decisionHandler(.cancel)
+                return
             }
         }
         
         decisionHandler(.allow)
+
     }
     
     // MARK: - Helpers

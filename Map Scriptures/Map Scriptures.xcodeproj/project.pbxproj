@@ -25,6 +25,7 @@
 		2FCBC0BE1FB0E5B4001D6C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCBC0BC1FB0E5B4001D6C0F /* LaunchScreen.storyboard */; };
 		2FDD38F71FB6547600232D8D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDD38F61FB6546400232D8D /* MapKit.framework */; };
 		2FDD38F91FB65AAB00232D8D /* ScriptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD38F81FB65AAB00232D8D /* ScriptureViewController.swift */; };
+		2FDD38FB1FB9219F00232D8D /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD38FA1FB9219F00232D8D /* ChaptersViewController.swift */; };
 		CF8C18CBE1AD795DA5641B80 /* Pods_Map_Scriptures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C392C2AC0B0B0C27455047D8 /* Pods_Map_Scriptures.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		2FCBC0BF1FB0E5B4001D6C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FDD38F61FB6546400232D8D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2FDD38F81FB65AAB00232D8D /* ScriptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptureViewController.swift; sourceTree = "<group>"; };
+		2FDD38FA1FB9219F00232D8D /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		5940A2FBCA4E00E56BF8BE66 /* Pods-Map Scriptures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map Scriptures.release.xcconfig"; path = "Pods/Target Support Files/Pods-Map Scriptures/Pods-Map Scriptures.release.xcconfig"; sourceTree = "<group>"; };
 		C392C2AC0B0B0C27455047D8 /* Pods_Map_Scriptures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Map_Scriptures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				2FC2A8791FB2AF620028B273 /* BooksViewController.swift */,
 				2FDD38F81FB65AAB00232D8D /* ScriptureViewController.swift */,
 				2FC2A87B1FB2AF770028B273 /* VolumesViewController.swift */,
+				2FDD38FA1FB9219F00232D8D /* ChaptersViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				2F94BEC61FB0FB1E00B74753 /* Book.swift in Sources */,
 				2FCBC0B21FB0E5B4001D6C0F /* AppDelegate.swift in Sources */,
 				2F94BECB1FB0FB1E00B74753 /* Scripture.swift in Sources */,
+				2FDD38FB1FB9219F00232D8D /* ChaptersViewController.swift in Sources */,
 				2FC2A87C1FB2AF770028B273 /* VolumesViewController.swift in Sources */,
 				2FDD38F91FB65AAB00232D8D /* ScriptureViewController.swift in Sources */,
 				2FC2A87A1FB2AF620028B273 /* BooksViewController.swift in Sources */,

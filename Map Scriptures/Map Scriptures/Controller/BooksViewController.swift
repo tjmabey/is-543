@@ -16,6 +16,7 @@ class BooksViewController : UITableViewController {
     private struct Storyboard {
         static let BookCell = "BookCell"
         static let ShowScriptureSegue = "Show Scripture"
+        static let ShowChaptersSegue = "Show Chapters"
     }
     
     // MARK: - Segues
@@ -25,11 +26,16 @@ class BooksViewController : UITableViewController {
             if let destVC = segue.destination as? ScriptureViewController {
                 if let indexPath = tableView.indexPathForSelectedRow {
                     destVC.book = books[indexPath.row]
-                    destVC.chapter = 2
-                    destVC.title = "\(books[indexPath.row].fullName) 2"
+                    destVC.chapter = 0
+                    destVC.title = "\(books[indexPath.row].fullName)"
                 }
-                
-                
+            }
+        } else if segue.identifier == Storyboard.ShowChaptersSegue {
+            if let destVC = segue.destination as? ChaptersViewController {
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    destVC.book = books[indexPath.row]
+                    destVC.title = books[indexPath.row].fullName
+                }
             }
         }
     }
@@ -51,6 +57,12 @@ class BooksViewController : UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Storyboard.ShowScriptureSegue, sender: self)
+        
+        if books[indexPath.row].numChapters != nil {
+            performSegue(withIdentifier: Storyboard.ShowChaptersSegue, sender: self)
+        } else {
+            performSegue(withIdentifier: Storyboard.ShowScriptureSegue, sender: self)
+        }
+        
     }
 }

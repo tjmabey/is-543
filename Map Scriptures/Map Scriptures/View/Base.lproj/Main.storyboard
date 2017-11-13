@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="-630"/>
+            <point key="canvasLocation" x="-66" y="-856"/>
         </scene>
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="129"/>
+            <point key="canvasLocation" x="518" y="606"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -73,7 +73,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-856" y="-330"/>
+            <point key="canvasLocation" x="-1084" y="-340"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -116,7 +116,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="-630"/>
+            <point key="canvasLocation" x="745" y="-857"/>
         </scene>
         <!--Volume-->
         <scene sceneID="DYf-GM-uYR">
@@ -144,30 +144,63 @@
                     <navigationItem key="navigationItem" title="Volume" id="Trj-Uo-xNp"/>
                     <connections>
                         <segue destination="dPn-hf-HDd" kind="show" identifier="Show Scripture" id="Kir-p0-K7s"/>
+                        <segue destination="ZUD-vK-62U" kind="show" identifier="Show Chapters" id="CHX-Qc-eHW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCa-MP-x6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="-630"/>
+            <point key="canvasLocation" x="1551" y="-857"/>
         </scene>
         <!--Chapter-->
+        <scene sceneID="w0C-aE-pha">
+            <objects>
+                <tableViewController id="ZUD-vK-62U" userLabel="Chapter" customClass="ChaptersViewController" customModule="Map_Scriptures" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="byd-hE-fgS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChapterCell" id="9V3-fj-oJS">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9V3-fj-oJS" id="8ex-E3-tgo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZUD-vK-62U" id="FvT-uy-Sr1"/>
+                            <outlet property="delegate" destination="ZUD-vK-62U" id="8bs-jI-95r"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Book" id="W3X-vq-OaV"/>
+                    <connections>
+                        <segue destination="dPn-hf-HDd" kind="show" identifier="Show Chapter Scriptures" id="mZf-qY-M9W"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEx-OI-GMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="-858"/>
+        </scene>
+        <!--Verse-->
         <scene sceneID="A2G-5o-URW">
             <objects>
-                <viewController id="dPn-hf-HDd" customClass="ScriptureViewController" customModule="Map_Scriptures" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dPn-hf-HDd" userLabel="Verse" customClass="ScriptureViewController" customModule="Map_Scriptures" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ePQ-KB-y8R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="HjK-qx-Ekb"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chapter" id="5Ij-2x-g2q"/>
+                    <navigationItem key="navigationItem" title="Verses" id="5Ij-2x-g2q"/>
                     <connections>
                         <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="Show Map" id="QQT-WY-KvJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6k6-m0-3cQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2202" y="-630"/>
+            <point key="canvasLocation" x="1967" y="-85"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -183,10 +216,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="129"/>
+            <point key="canvasLocation" x="-393" y="606"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="QQT-WY-KvJ"/>
+        <segue reference="mZf-qY-M9W"/>
     </inferredMetricsTieBreakers>
 </document>
