@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F85523D1F8D9E9000518E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85523C1F8D9E9000518E2C /* AppDelegate.swift */; };
+		2F85523F1F8D9E9000518E2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85523E1F8D9E9000518E2C /* ViewController.swift */; };
+		2F8552421F8D9E9000518E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8552401F8D9E9000518E2C /* Main.storyboard */; };
+		2F8552441F8D9E9000518E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8552431F8D9E9000518E2C /* Assets.xcassets */; };
+		2F8552471F8D9E9000518E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8552451F8D9E9000518E2C /* LaunchScreen.storyboard */; };
+		2F8552531F8DA32800518E2C /* RookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8552521F8DA32800518E2C /* RookCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F8552391F8D9E9000518E2C /* rookdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rookdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F85523C1F8D9E9000518E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F85523E1F8D9E9000518E2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F8552411F8D9E9000518E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F8552431F8D9E9000518E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F8552461F8D9E9000518E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F8552481F8D9E9000518E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F8552521F8DA32800518E2C /* RookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F8552361F8D9E9000518E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F8552301F8D9E9000518E2C = {
+			isa = PBXGroup;
+			children = (
+				2F85523B1F8D9E9000518E2C /* rookdemo */,
+				2F85523A1F8D9E9000518E2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F85523A1F8D9E9000518E2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F8552391F8D9E9000518E2C /* rookdemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F85523B1F8D9E9000518E2C /* rookdemo */ = {
+			isa = PBXGroup;
+			children = (
+				2F8552511F8D9F9C00518E2C /* Model */,
+				2F8552501F8D9F7A00518E2C /* View */,
+				2F85524F1F8D9F6100518E2C /* Controller */,
+				2F85524E1F8D9F4400518E2C /* Supporting Files */,
+				2F8552431F8D9E9000518E2C /* Assets.xcassets */,
+			);
+			path = rookdemo;
+			sourceTree = "<group>";
+		};
+		2F85524E1F8D9F4400518E2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F85523C1F8D9E9000518E2C /* AppDelegate.swift */,
+				2F8552451F8D9E9000518E2C /* LaunchScreen.storyboard */,
+				2F8552481F8D9E9000518E2C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F85524F1F8D9F6100518E2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F85523E1F8D9E9000518E2C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F8552501F8D9F7A00518E2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F8552401F8D9E9000518E2C /* Main.storyboard */,
+				2F8552521F8DA32800518E2C /* RookCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F8552511F8D9F9C00518E2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F8552381F8D9E9000518E2C /* rookdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F85524B1F8D9E9000518E2C /* Build configuration list for PBXNativeTarget "rookdemo" */;
+			buildPhases = (
+				2F8552351F8D9E9000518E2C /* Sources */,
+				2F8552361F8D9E9000518E2C /* Frameworks */,
+				2F8552371F8D9E9000518E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rookdemo;
+			productName = rookdemo;
+			productReference = 2F8552391F8D9E9000518E2C /* rookdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F8552311F8D9E9000518E2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tyler Mabey";
+				TargetAttributes = {
+					2F8552381F8D9E9000518E2C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2F8552341F8D9E9000518E2C /* Build configuration list for PBXProject "rookdemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F8552301F8D9E9000518E2C;
+			productRefGroup = 2F85523A1F8D9E9000518E2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F8552381F8D9E9000518E2C /* rookdemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F8552371F8D9E9000518E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8552471F8D9E9000518E2C /* LaunchScreen.storyboard in Resources */,
+				2F8552441F8D9E9000518E2C /* Assets.xcassets in Resources */,
+				2F8552421F8D9E9000518E2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F8552351F8D9E9000518E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F85523F1F8D9E9000518E2C /* ViewController.swift in Sources */,
+				2F85523D1F8D9E9000518E2C /* AppDelegate.swift in Sources */,
+				2F8552531F8DA32800518E2C /* RookCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F8552401F8D9E9000518E2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F8552411F8D9E9000518E2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F8552451F8D9E9000518E2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F8552461F8D9E9000518E2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F8552491F8D9E9000518E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F85524A1F8D9E9000518E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F85524C1F8D9E9000518E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5K9W8NTK2;
+				INFOPLIST_FILE = rookdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.rookdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F85524D1F8D9E9000518E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5K9W8NTK2;
+				INFOPLIST_FILE = rookdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.rookdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F8552341F8D9E9000518E2C /* Build configuration list for PBXProject "rookdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8552491F8D9E9000518E2C /* Debug */,
+				2F85524A1F8D9E9000518E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F85524B1F8D9E9000518E2C /* Build configuration list for PBXNativeTarget "rookdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F85524C1F8D9E9000518E2C /* Debug */,
+				2F85524D1F8D9E9000518E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F8552311F8D9E9000518E2C /* Project object */;
+}
