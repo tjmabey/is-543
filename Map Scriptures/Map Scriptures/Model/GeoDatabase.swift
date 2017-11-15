@@ -164,8 +164,30 @@ class GeoDatabase {
     //
     func volumes() -> [String] {
         // NEEDSWORK: replace this with code to read the volume titles from the database
+        
+//        volumeNames = []
+//
+//        for row in try Row.fetchAll(db,
+//                                    "select FullName from book where id < 10;"
+//        )
+        do {
+            let volumeNames = try dbQueue.inDatabase { (db: Database) -> [String] in
+                var volumeNames = [String]()
+                
+                let rows = try Row.fetchCursor(db, "select FullName from book where ParentBookID is null;")
+                
+                while let row = try rows.next() {
+                    volumeNames.append(row[Book.fullName])
+                }
+                
+                return volumeNames
+            }
+            return volumeNames
+        } catch {
+            return []
+        }
 
-        return ["Old Testament", "New Testament", "Book of Mormon",
-                "Doctrine and Covenants", "Pearl of Great Price"]
+//        return ["Old Testament", "New Testament", "Book of Mormon",
+//                "Doctrine and Covenants", "Pearl of Great Price"]
     }
 }

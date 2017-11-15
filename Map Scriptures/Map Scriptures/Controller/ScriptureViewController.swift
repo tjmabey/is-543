@@ -45,8 +45,8 @@ class ScriptureViewController : UIViewController, WKNavigationDelegate {
         
         configureDetailViewController()
         
-        let html = ScriptureRenderer.sharedRenderer.htmlForBookId(book.id, chapter: chapter)
-        webView.loadHTMLString(html.0, baseURL: nil)
+        let (html, geoplaces) = ScriptureRenderer.sharedRenderer.htmlForBookId(book.id, chapter: chapter)
+        webView.loadHTMLString(html, baseURL: nil)
     }
     
     // MARK: - Segues
@@ -56,6 +56,7 @@ class ScriptureViewController : UIViewController, WKNavigationDelegate {
             let navVC = segue.destination as? UINavigationController
             if let mapVC = navVC?.topViewController as? MapViewController {
                 // NEEDSWORK: configure the map view controller appropiately
+                //mapVC.title = 
             }
         }
     }
@@ -65,7 +66,7 @@ class ScriptureViewController : UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let path = navigationAction.request.url?.absoluteString {
             if path.hasPrefix(ScriptureRenderer.Constant.baseUrl) {
-                print("Request: \(path)")
+                print("Request: \(path) mapViewController: \(mapViewController)")
                 
                 
                 if let mapVC = mapViewController {
